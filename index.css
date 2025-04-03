@@ -192,7 +192,6 @@ nav {
     transform: translateX(-50%);
     width: 350px;
     height: 350px;
-    background: var(--accent-yellow);
     border-radius: 50%;
     z-index: -1;
 }
@@ -312,9 +311,7 @@ nav {
     align-items: center;
 }
 
-.education-content .profile-img::before {
-    background: var(--white);
-}
+
 
 .education-stats {
     display: flex;
