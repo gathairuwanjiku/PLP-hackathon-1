@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gathairu Fidelis Wanjiku - Web Development & Python</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <Link rel="stylesheet" href="index.css"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">Gathairu Fidelis</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#education">About</a>
+                <a href="#skills">Tools</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="fidesCV.docx" download class="hire-btn desktop">Download CV</a>
+            <div class="menu-toggle" id="menuToggle">
+                <i data-feather="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <a href="#home" onclick="closeMobileNav()">Home</a>
+        <a href="#services" onclick="closeMobileNav()">Services</a>
+        <a href="#education" onclick="closeMobileNav()">About</a>
+        <a href="#skills" onclick="closeMobileNav()">Tools</a>
+        <a href="#contact" onclick="closeMobileNav()">Contact</a>
+        <a href="fidesCV.docx" download class="hire-btn">Download CV</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <h2>Hello There!</h2>
+                    <h1>I'm Gathairu Fidelis Wanjiku</h1>
+                    <p>Web Developer & Python Enthusiast based in Kenya, passionate about creating innovative solutions.</p>
+                    <div class="hero-buttons">
+                        <button class="portfolio-btn">View My Portfolio</button>
+                        <a href="fidesCV.docx" download class="hire-btn">Download CV</a>
+                    </div>
+                </div>
+                <div class="profile-img" data-aos="fade-left">
+                    <img src="dp.jpg" alt="Profile">
+                </div>
+            </div>
+            <div class="skills-bar">
+                <span>Web Development</span> • <span>Python Programming</span> • <span>Database Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Services I Provide</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <i data-feather="layout"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating modern, responsive websites that convert.</p>
+                    <span class="learn-more">Learn More +</span>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="code"></i>
+                    <h3>Python Programming</h3>
+                    <p>Developing efficient Python scripts and applications.</p>
+                    <span class="learn-more">Learn More +</span>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <i data-feather="database"></i>
+                    <h3>Database Design</h3>
+                    <p>Structuring and managing data with optimized databases.</p>
+                    <span class="learn-more">Learn More +</span>
+                </div>
+            </div>
+            <button class="view-all-btn">View All Services</button>
+        </div>
+    </section>
+
+    <!-- About Section (Repurposed Education) -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Who is Gathairu Fidelis?</h2>
+            <div class="education-content">
+                <div class="profile-img" data-aos="fade-right">
+                    <img src="dp.jpg" alt="Profile">
+                </div>
+                <div data-aos="fade-left">
+                    <p>I'm a passionate software developer with a love for creating solutions. I am driven by wanting to solve problems and continuously learning in the technology field.</p>
+                    <div class="education-stats">
+                        <div class="stat">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Clients Served</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons" style="margin-top: 2rem;">
+                        <a href="fidesCV.docx" download class="portfolio-btn">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section (Repurposed Skills) -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Favorite Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                    <i data-feather="code"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="database"></i>
+                    <p>SQL</p>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                    <i data-feather="coffee"></i>
+                    <p>Java</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+            <form class="contact-form" action="mailto:gathairufidelis@gmail.com" method="POST" enctype="multipart/form-data">
+                <div class="form-grid">
+                    <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                    <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+                    <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="hire-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        feather.replace();
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        const closeBtn = document.getElementById('closeBtn');
+
+        function toggleMobileNav() {
+            mobileNav.classList.toggle('active');
+        }
+
+        function closeMobileNav() {
+            mobileNav.classList.remove('active');
+        }
+
+        menuToggle.addEventListener('click', toggleMobileNav);
+        closeBtn.addEventListener('click', closeMobileNav);
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileNav.contains(e.target) && e.target !== menuToggle) {
+                closeMobileNav();
+            }
+        });
+
+        // Update Feather icons when mobile menu is opened (in case they're not rendered)
+        menuToggle.addEventListener('click', () => {
+            setTimeout(() => {
+                feather.replace();
+            }, 100);
+        });
+    </script>
+</body>
+</html>
